@@ -48,10 +48,10 @@ def ask_questions(index_data, polish_phrases_string, phrase=None):
     else:
         print('\nBAD ANSWER.\n')
     another = input('Do you want to draw another card? '
-        '(press enter to continue or anything else to stop the application) ')
+        '(press enter to continue or "q" to exit the application) ')
     if another == '':
         ask_questions(index_data, polish_phrases_string)
-    else:
+    elif another == 'q':
         exit()
 
 
